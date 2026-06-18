@@ -113,9 +113,6 @@
     .chambre-main-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
     .chambre-main-img:hover img { transform: scale(1.04); }
     .chambre-badge { position: absolute; top: 16px; left: 16px; background: var(--teal); color: #fff; font-size: .7rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; }
-    .chambre-thumbs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; height: 80px; flex-shrink: 0; }
-    .chambre-thumbs img { width: 100%; height: 100%; object-fit: cover; cursor: pointer; transition: opacity .25s; display: block; }
-    .chambre-thumbs img:hover { opacity: .8; }
     .chambre-body { padding: 24px 28px 28px; background: #fff; }
     .chambre-body h3 { font-family: 'Playfair Display', serif; font-size: 1.35rem; color: var(--teal-dk); margin-bottom: 8px; }
     .chambre-body p { font-size: .88rem; color: var(--text-lt); line-height: 1.65; margin-bottom: 16px; }
@@ -439,13 +436,8 @@
       <!-- Chambre 1 -->
       <div class="chambre-card reveal">
         <div class="chambre-main-img" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="images/chambre1-main.jpg" alt="Chambre 1 — lit baldaquin" id="c1main" />
+          <img src="images/chambre1-main.jpg" alt="Chambre 1 — lit baldaquin" />
           <span class="chambre-badge">Chambre 1</span>
-        </div>
-        <div class="chambre-thumbs">
-          <img src="images/chambre1-baldaquin.jpg" alt="Chambre 1 détail baldaquin bleu" onclick="switchMain('c1main', this.src)" />
-          <img src="images/chambre1-rotin.jpg" alt="Chambre 1 fauteuil rotin" onclick="switchMain('c1main', this.src)" />
-          <img src="images/chambre1-rotin.jpg" alt="Chambre 1 moustiquaire" onclick="switchMain('c1main', this.src)" />
         </div>
         <div class="chambre-body">
           <h3>La Chambre Mapou</h3>
@@ -463,13 +455,8 @@
       <!-- Chambre 2 -->
       <div class="chambre-card reveal reveal-delay-1">
         <div class="chambre-main-img" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="images/chambre2-main.jpg" alt="Chambre 2 — lit bois flotté" id="c2main" />
+          <img src="images/chambre2-main.jpg" alt="Chambre 2 — lit bois flotté" />
           <span class="chambre-badge">Chambre 2</span>
-        </div>
-        <div class="chambre-thumbs">
-          <img src="images/chambre2-hibiscus.jpg" alt="Chambre 2 serviettes hibiscus" onclick="switchMain('c2main', this.src)" />
-          <img src="images/chambre2-detail.jpg" alt="Chambre 2 détail" onclick="switchMain('c2main', this.src)" />
-          <img src="images/enseigne.jpg" alt="Enseigne Galant'Elia" onclick="switchMain('c2main', this.src)" />
         </div>
         <div class="chambre-body">
           <h3>La Chambre Flamboyant</h3>
